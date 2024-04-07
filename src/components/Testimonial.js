@@ -34,9 +34,9 @@ function Testimonial(props) {
     }
     
   return (
-    <div className='w-[85vw] sm:w-[625px] sm:min-h-[425px] min-h-[400px] bg-white md:flex flex-col justify-center items-center  md:mt-7 m-10 md:p-6 p-7 transition-all duration-400 shadow-md rounded-md hover:shadow-xl  '>
+    <div className='w-[85vw] sm:w-[625px] sm:min-h-[425px] min-h-[300px] bg-white md:flex flex-col justify-center items-center  md:mt-7  md:p-6 p-7 transition-all duration-400 shadow-md rounded-md hover:shadow-xl  '>
     <Card review={review[index]}></Card>
-            <div className=' text-3xl my-4 gap-3 text-violet-400 font-bold mx-auto '>
+            <div className=' text-3xl my-5 gap-3  text-violet-400 font-bold mx-auto '>
                 <button onClick={leftShiftHandler} className='cursor-pointer hover:text-violet-500'>
                     <FiChevronLeft/>
                 </button>
@@ -44,8 +44,8 @@ function Testimonial(props) {
                     <FiChevronRight/>
                 </button>
             </div>
-            <div className='bg-violet-400 text-wrap  hover:bg-violet-500 transition-all duration-200 cursor-pointer  mx-auto  rounded-md font-bold text-white  text-lg'>
-                <button className='md:h-[42px] h-[42px]   md:w-[180px]' onClick={surpriseHandler}>Surprise Me</button>
+            <div className='bg-violet-400 text-wrap  hover:bg-violet-500 transition-all duration-200 cursor-pointer md:mx-0 mx-10 mx-auto md:mb-1 rounded-md font-bold text-white  text-lg'>
+                <button className='md:h-[42px] h-[42px] w-full  md:w-[180px]' onClick={surpriseHandler}>Randomly</button>
             </div>
     </div>
 )
