@@ -34,7 +34,7 @@ function Testimonial(props) {
     }
     
   return (
-    <div className='w-[85vw] sm:w-[625px] sm:min-h-[425px] min-h-[400px] bg-white md:flex flex-col justify-center items-center  md:mt-7 mt-5 md:p-6 p-7 transition-all duration-400 shadow-md rounded-md hover:shadow-xl  '>
+    <div className='w-[85vw] sm:w-[625px] sm:min-h-[425px] min-h-[400px] bg-white md:flex flex-col justify-center items-center  md:mt-7 m-10 md:p-6 p-7 transition-all duration-400 shadow-md rounded-md hover:shadow-xl  '>
     <Card review={review[index]}></Card>
             <div className=' text-3xl my-4 gap-3 text-violet-400 font-bold mx-auto '>
                 <button onClick={leftShiftHandler} className='cursor-pointer hover:text-violet-500'>
